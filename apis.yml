@@ -1,0 +1,220 @@
+aid: human-security
+name: HUMAN Security
+description: |
+  HUMAN Security (formerly PerimeterX) is an application security company
+  focused on stopping automated abuse: sophisticated bots, account takeover,
+  fake account creation, scraping, ad fraud, client-side supply-chain
+  attacks, and transaction fraud. HUMAN operates the Human Defense Platform,
+  which combines a JavaScript sensor and mobile SDKs running on the client
+  with risk decisioning services on the server side. Products in the
+  platform include Bot Defender (formerly PerimeterX Bot Defender),
+  Account Defender, Credential Intelligence, Transaction Abuse Defense,
+  Ad Fraud Sensor / MediaGuard, Code Defender (client-side script and
+  supply-chain protection), and Scraper Protection. HUMAN is primarily an
+  enterprise vendor — onboarding, sensor configuration, and policy tuning
+  go through the HUMAN portal and a customer success team — but the
+  platform exposes REST APIs and SDKs that engineering teams integrate into
+  web apps, mobile apps, edge workers, and back-end services.
+type: Index
+position: Provider
+access: Enterprise
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Bot Mitigation
+  - Account Takeover
+  - Ad Fraud
+  - Client-Side Security
+  - Application Security
+  - Fraud
+  - Bot Defender
+  - PerimeterX
+  - JavaScript Sensor
+  - Edge Security
+url: https://raw.githubusercontent.com/api-evangelist/human-security/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: human-security:bot-defender
+    name: HUMAN Bot Defender
+    description: |
+      Bot Defender (formerly PerimeterX Bot Defender) is HUMAN's flagship
+      product for stopping automated traffic against web and mobile
+      properties. A JavaScript sensor and mobile SDKs collect signals
+      from the client, an enforcement layer (CDN module, reverse proxy,
+      cloud connector, or HUMAN-managed edge) sends them to HUMAN's
+      decisioning service, and a verdict (allow, challenge, block) is
+      applied per request.
+    humanURL: https://www.humansecurity.com/products/bot-defender/
+    baseURL: https://www.humansecurity.com
+    tags:
+      - Bot Mitigation
+      - Scraping
+      - Carding
+      - Sneakers
+      - Inventory Hoarding
+    properties:
+      - type: ProductPage
+        url: https://www.humansecurity.com/products/bot-defender/
+      - type: Documentation
+        url: https://docs.humansecurity.com/
+  - aid: human-security:account-defender
+    name: HUMAN Account Defender
+    description: |
+      Account Defender protects against account takeover, fake account
+      creation, and post-login abuse by scoring login, signup, and
+      session events with behavioral, device, and credential-intel
+      signals. It integrates with identity flows via SDK and server APIs
+      and feeds decisions back into the customer's auth stack.
+    humanURL: https://www.humansecurity.com/products/account-defender/
+    baseURL: https://www.humansecurity.com
+    tags:
+      - ATO
+      - Account Takeover
+      - Fake Accounts
+      - Credential Intelligence
+    properties:
+      - type: ProductPage
+        url: https://www.humansecurity.com/products/account-defender/
+      - type: Documentation
+        url: https://docs.humansecurity.com/
+  - aid: human-security:code-defender
+    name: HUMAN Code Defender
+    description: |
+      Code Defender is HUMAN's client-side security product, providing
+      runtime visibility and controls for third-party scripts, supply-chain
+      attacks (Magecart, formjacking), and unauthorized data exfiltration
+      from browser sessions. It deploys via the same sensor footprint and
+      reports script behavior to the HUMAN portal.
+    humanURL: https://www.humansecurity.com/products/code-defender/
+    baseURL: https://www.humansecurity.com
+    tags:
+      - Client-Side Security
+      - Supply Chain
+      - Magecart
+      - PCI DSS 4
+    properties:
+      - type: ProductPage
+        url: https://www.humansecurity.com/products/code-defender/
+      - type: Documentation
+        url: https://docs.humansecurity.com/
+  - aid: human-security:mediaguard
+    name: HUMAN MediaGuard
+    description: |
+      MediaGuard is HUMAN's ad fraud and ad quality product (incorporating
+      capabilities from the Clean.io and Adwerx acquisitions and HUMAN's
+      ad-fraud heritage), focused on protecting publishers, platforms,
+      and buyers from invalid traffic (IVT), malvertising, and ad-funded
+      bot activity.
+    humanURL: https://www.humansecurity.com/products/mediaguard/
+    baseURL: https://www.humansecurity.com
+    tags:
+      - Ad Fraud
+      - IVT
+      - Malvertising
+      - Ad Quality
+    properties:
+      - type: ProductPage
+        url: https://www.humansecurity.com/products/mediaguard/
+      - type: Documentation
+        url: https://docs.humansecurity.com/
+  - aid: human-security:transaction-abuse-defense
+    name: HUMAN Transaction Abuse Defense
+    description: |
+      Transaction Abuse Defense extends HUMAN's signals into checkout,
+      payment, and high-value transaction flows to detect carding,
+      payment abuse, gift-card cracking, and similar automated attacks
+      that survive earlier challenge layers.
+    humanURL: https://www.humansecurity.com/products/transaction-abuse-defense/
+    baseURL: https://www.humansecurity.com
+    tags:
+      - Payment Abuse
+      - Carding
+      - Gift Cards
+      - Fraud
+    properties:
+      - type: ProductPage
+        url: https://www.humansecurity.com/products/transaction-abuse-defense/
+      - type: Documentation
+        url: https://docs.humansecurity.com/
+  - aid: human-security:scraper-protection
+    name: HUMAN Scraper Protection
+    description: |
+      Scraper Protection targets large-scale content scraping by
+      automated agents, including LLM training scrapers and competitive
+      intelligence bots, layering signals from the JS sensor with edge
+      enforcement to protect pricing, inventory, and proprietary content.
+    humanURL: https://www.humansecurity.com/products/scraper-protection/
+    baseURL: https://www.humansecurity.com
+    tags:
+      - Scraping
+      - LLM Scraping
+      - Content Protection
+    properties:
+      - type: ProductPage
+        url: https://www.humansecurity.com/products/scraper-protection/
+      - type: Documentation
+        url: https://docs.humansecurity.com/
+features:
+  - name: Multi-Signal Decisioning
+    description: Combines client telemetry, network signals, device intelligence, and behavioral analysis into per-request verdicts.
+  - name: JavaScript Sensor and Mobile SDKs
+    description: Lightweight web sensor plus native iOS and Android SDKs collect signals across surfaces.
+  - name: Edge and CDN Enforcement
+    description: Integrations with major CDNs (Cloudflare, Fastly, Akamai, AWS CloudFront) and web servers apply verdicts at the edge.
+  - name: Human Defense Platform
+    description: A shared platform that lets Bot Defender, Account Defender, MediaGuard, Code Defender, and adjacent products reuse signals and operate from one console.
+  - name: PCI DSS 4 Client-Side Coverage
+    description: Code Defender helps customers meet PCI DSS 4.0 client-side script inventory and integrity requirements.
+  - name: Threat Intelligence Network
+    description: Aggregated signal across all HUMAN customers powers shared bot, fraud, and ad-quality intelligence.
+useCases:
+  - name: E-commerce Bot Defense
+    description: Block sneaker bots, scalpers, inventory hoarders, and account creation bots from retail sites.
+  - name: Account Takeover Prevention
+    description: Detect credential stuffing and ATO attempts at login and post-login.
+  - name: Ad Fraud Detection
+    description: Identify and block invalid traffic and malvertising for publishers, ad platforms, and DSP/SSP partners.
+  - name: Client-Side Supply Chain Security
+    description: Inventory and govern third-party scripts to defend against formjacking and Magecart-style attacks.
+  - name: API Abuse Mitigation
+    description: Protect public-facing APIs (catalog, search, pricing) from scraping and credential abuse.
+integrations:
+  - name: Cloudflare
+  - name: Fastly
+  - name: Akamai
+  - name: AWS CloudFront
+  - name: Nginx
+  - name: Apache
+  - name: F5
+  - name: Splunk
+  - name: Datadog
+authentication:
+  - type: APIKey
+    description: HUMAN portal-issued API keys for customer-side integrations and server SDKs.
+  - type: SignedSensor
+    description: HUMAN-issued sensor configuration and signed payloads exchanged between the client sensor and HUMAN decisioning services.
+  - type: PartnerGated
+    description: Production tenants are provisioned through HUMAN sales and customer success.
+common:
+  - type: Website
+    url: https://www.humansecurity.com/
+  - type: Products
+    url: https://www.humansecurity.com/products/
+  - type: Documentation
+    url: https://docs.humansecurity.com/
+  - type: Blog
+    url: https://www.humansecurity.com/learn/blog/
+  - type: ThreatIntelligence
+    url: https://www.humansecurity.com/learn/satori-threat-intelligence-and-research/
+  - type: Careers
+    url: https://www.humansecurity.com/company/careers/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/humansecurity/
+  - type: Twitter
+    url: https://twitter.com/HUMANSecurityIQ
+  - type: Contact
+    url: https://www.humansecurity.com/contact/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
