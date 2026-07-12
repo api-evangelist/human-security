@@ -197,6 +197,12 @@ authentication:
   - type: PartnerGated
     description: Production tenants are provisioned through HUMAN sales and customer success.
 common:
+  - type: TrustCenter
+    url: security/human-security-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/human-security-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/human-security-domain-security.yml
   - type: Website
     url: https://www.humansecurity.com/
   - type: Products
