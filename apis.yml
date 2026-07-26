@@ -16,9 +16,21 @@ description: |
   platform exposes REST APIs and SDKs that engineering teams integrate into
   web apps, mobile apps, edge workers, and back-end services.
 type: Index
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
 position: Provider
 access: Enterprise
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/human-security.png
 tags:
   - Bot Mitigation
   - Account Takeover
@@ -32,7 +44,7 @@ tags:
   - Edge Security
 url: https://raw.githubusercontent.com/api-evangelist/human-security/refs/heads/main/apis.yml
 created: '2026-05-23'
-modified: '2026-05-23'
+modified: '2026-07-25'
 specificationVersion: '0.20'
 apis:
   - aid: human-security:bot-defender
@@ -96,26 +108,6 @@ apis:
     properties:
       - type: ProductPage
         url: https://www.humansecurity.com/products/code-defender/
-      - type: Documentation
-        url: https://docs.humansecurity.com/
-  - aid: human-security:mediaguard
-    name: HUMAN MediaGuard
-    description: |
-      MediaGuard is HUMAN's ad fraud and ad quality product (incorporating
-      capabilities from the Clean.io and Adwerx acquisitions and HUMAN's
-      ad-fraud heritage), focused on protecting publishers, platforms,
-      and buyers from invalid traffic (IVT), malvertising, and ad-funded
-      bot activity.
-    humanURL: https://www.humansecurity.com/products/mediaguard/
-    baseURL: https://www.humansecurity.com
-    tags:
-      - Ad Fraud
-      - IVT
-      - Malvertising
-      - Ad Quality
-    properties:
-      - type: ProductPage
-        url: https://www.humansecurity.com/products/mediaguard/
       - type: Documentation
         url: https://docs.humansecurity.com/
   - aid: human-security:transaction-abuse-defense
@@ -221,6 +213,8 @@ common:
     url: https://twitter.com/HUMANSecurityIQ
   - type: Contact
     url: https://www.humansecurity.com/contact/
+  - type: News
+    url: https://www.humansecurity.com/products/mediaguard/
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
