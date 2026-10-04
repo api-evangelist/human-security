@@ -42,7 +42,21 @@ accessModel:
 position: Producing
 access: Enterprise
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/human-security.png
+x-docs-platform: fern
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
 tags:
+  - Bot Mitigation
+  - Account Takeover
+  - Ad Fraud
+  - Client-Side Security
+  - Application Security
+  - Fraud Prevention
+  - Bot Defender
+  - PerimeterX
+  - JavaScript Sensor
+  - Edge Security
+tags_raw:
   - Bot Mitigation
   - Account Takeover
   - Ad Fraud
@@ -69,7 +83,6 @@ apis:
       decisioning service, and a verdict (allow, challenge, block) is
       applied per request.
     humanURL: https://www.humansecurity.com/products/bot-defender/
-    baseURL: https://www.humansecurity.com
     tags:
       - Bot Mitigation
       - Scraping
@@ -90,7 +103,6 @@ apis:
       signals. It integrates with identity flows via SDK and server APIs
       and feeds decisions back into the customer's auth stack.
     humanURL: https://www.humansecurity.com/products/account-defender/
-    baseURL: https://www.humansecurity.com
     tags:
       - ATO
       - Account Takeover
@@ -110,7 +122,6 @@ apis:
       from browser sessions. It deploys via the same sensor footprint and
       reports script behavior to the HUMAN portal.
     humanURL: https://www.humansecurity.com/products/code-defender/
-    baseURL: https://www.humansecurity.com
     tags:
       - Client-Side Security
       - Supply Chain
@@ -129,8 +140,12 @@ apis:
       payment abuse, gift-card cracking, and similar automated attacks
       that survive earlier challenge layers.
     humanURL: https://www.humansecurity.com/products/transaction-abuse-defense/
-    baseURL: https://www.humansecurity.com
     tags:
+      - Payment Abuse
+      - Carding
+      - Gift Cards
+      - Fraud Prevention
+    tags_raw:
       - Payment Abuse
       - Carding
       - Gift Cards
@@ -148,7 +163,6 @@ apis:
       intelligence bots, layering signals from the JS sensor with edge
       enforcement to protect pricing, inventory, and proprietary content.
     humanURL: https://www.humansecurity.com/products/scraper-protection/
-    baseURL: https://www.humansecurity.com
     tags:
       - Scraping
       - LLM Scraping
