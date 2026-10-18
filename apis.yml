@@ -85,6 +85,12 @@ apis:
     humanURL: https://www.humansecurity.com/products/bot-defender/
     tags:
       - Bot Mitigation
+      - Web Scraping
+      - Carding
+      - Sneakers
+      - Inventory Hoarding
+    tags_raw:
+      - Bot Mitigation
       - Scraping
       - Carding
       - Sneakers
@@ -164,6 +170,10 @@ apis:
       enforcement to protect pricing, inventory, and proprietary content.
     humanURL: https://www.humansecurity.com/products/scraper-protection/
     tags:
+      - Web Scraping
+      - LLM Scraping
+      - Content Protection
+    tags_raw:
       - Scraping
       - LLM Scraping
       - Content Protection
