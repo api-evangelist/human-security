@@ -25,6 +25,25 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-mobile-sdk-index.py
   first_seen: '2026-10-21'
+- partner_name: Netlify (own)
+  partner: netlify
+  partner_match: mirror
+  mirror_match: domain+name-among-holders
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.netlify.com/integrations/human-security/
+  mirror_of: netlify/integrations/netlify-integration-edges.yml
+  apps:
+  - HUMAN Security
+  - Site Protection Netlify Edge Function Enforcer
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Search
+  partner_tier: listing
 generated: '2026-10-21'
 method: searched
 source:
@@ -37,3 +56,4 @@ checked:
 - https://cert.appdefensealliance.org/certifications
 - https://play.google.com/sdks
 - https://search.maven.org/solrsearch/select
+- netlify/integrations/netlify-integration-edges.yml
